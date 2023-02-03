@@ -1,7 +1,18 @@
 {
   "name": "deploy",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "brunoken22 <bruno_am_22@hotmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
+    "nodemon": "^2.0.20",
+    "parcel": "^2.8.3"
+  },
+  "scripts": {
+    "dev": "nodemon --watch ./index.ts --exec ts-node ./back-end/index.ts",
+    "dev:parcel":"parcel serve ./fron-end/src/index.html",
+    "build":"tsc ./fron-end/src/index.ts",
+    "start": "node ./fron-end/src/index.js"
+  }
 }
