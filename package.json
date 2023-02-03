@@ -12,7 +12,7 @@
   "scripts": {
     "dev": "nodemon --watch ./index.ts --exec ts-node ./back-end/index.ts",
     "dev:parcel":"parcel serve ./fron-end/src/index.html",
-    "build":"tsc ./back-end/src/index.ts",
-    "start": "node ./back-end/src/index.js"
+    "build":"tsc ./back-end/index.ts",
+    "start": "node ./back-end/index.js"
   }
 }
