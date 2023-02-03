@@ -4,13 +4,16 @@
   "author": "brunoken22 <bruno_am_22@hotmail.com>",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "firebase-admin": "^11.5.0",
     "nodemon": "^2.0.20",
     "parcel": "^2.8.3",
+    "process": "^0.11.10",
     "typescript": "^4.9.5"
   },
   "scripts": {
+    "dev:env": "nodemon --watch ./index.ts --exec ts-node ./back-end/dev.ts",
     "dev": "nodemon --watch ./index.ts --exec ts-node ./back-end/index.ts",
     "dev:parcel": "parcel serve ./fron-end/src/index.html",
     "build": "tsc ./back-end/index.ts",
